@@ -5,9 +5,7 @@ class UserProfileController extends ControllerBase
 
     public function indexAction()
     {
-        $view = new \Phalcon\Mvc\View();
         $userProfile = UserProfile::find();
-        //echo "<pre>".print_r($userProfile,1)."</pre>";die();
         $this->view->userprofile = $userProfile;
     }
      
